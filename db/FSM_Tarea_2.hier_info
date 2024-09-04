@@ -1,0 +1,14 @@
+|fsm
+clk => state~1.DATAIN
+rst => state~3.DATAIN
+M => next_state.01.DATAB
+M => next_state.10.DATAB
+t0 => Selector1.IN3
+t0 => Selector0.IN2
+rst_manual => Selector0.IN3
+rst_manual => Selector1.IN1
+error << error.DB_MAX_OUTPUT_PORT_TYPE
+en_cont << en_cont.DB_MAX_OUTPUT_PORT_TYPE
+rst_timer << rst_timer.DB_MAX_OUTPUT_PORT_TYPE
+
+

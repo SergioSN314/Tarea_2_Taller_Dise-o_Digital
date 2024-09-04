@@ -1,0 +1,51 @@
+module mantenimmiento_tb;
+
+    reg clk;
+    reg reset;
+    reg enable;
+    wire [3:0] count;
+
+    // Instanciar el módulo bajo prueba (DUT)
+    contador_sencillo DUT (
+        .clk(clk),
+        .reset(reset),
+        .enable(enable),
+        .count(count)
+    );
+
+    // Generar el reloj
+    initial begin
+        clk = 0;
+        forever #5 clk = ~clk;  // Periodo de 10 unidades de tiempo
+    end
+
+    // Generar el reset
+    initial begin
+        reset = 1;
+        #12 reset = 0;  // Desactivar reset después de 12 unidades de tiempo
+    end
+
+    // Aplicar estímulos
+    initial begin
+        enable = 0;  // Deshabilitar el contador al inicio
+
+        // Esperar a que se desactive el reset
+        #15;
+        enable = 1;  // Habilitar el contador
+        #50;         // Contar durante 50 unidades de tiempo
+
+        enable = 0;  // Deshabilitar el contador
+        #20;
+        enable = 1;  // Volver a habilitar el contador
+        #30;
+
+        $finish;     // Terminar la simulación
+    end
+
+    // Monitorear las señales
+    initial begin
+        $monitor("Time=%0t clk=%0b reset=%0b enable=%0b count=%0d", 
+                 $time, clk, reset, enable, count);
+    end
+
+endmodule

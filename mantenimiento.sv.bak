@@ -1,0 +1,3 @@
+module mantenimiento (input clk, rst, M, rst_manual, 
+							output [7:0] status);
+	

@@ -1,0 +1,72 @@
+# Reading pref.tcl
+# do FSM_Tarea_2_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/IntelFPGA2/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Taller_Diseno_Digital/Tarea_2 {C:/Taller_Diseno_Digital/Tarea_2/fsm.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:47:57 on Sep 04,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Taller_Diseno_Digital/Tarea_2" C:/Taller_Diseno_Digital/Tarea_2/fsm.sv 
+# -- Compiling module fsm
+# 
+# Top level modules:
+# 	fsm
+# End time: 00:47:57 on Sep 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Taller_Diseno_Digital/Tarea_2 {C:/Taller_Diseno_Digital/Tarea_2/tb_fsm.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:47:57 on Sep 04,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Taller_Diseno_Digital/Tarea_2" C:/Taller_Diseno_Digital/Tarea_2/tb_fsm.sv 
+# -- Compiling module tb_fsm
+# 
+# Top level modules:
+# 	tb_fsm
+# End time: 00:47:57 on Sep 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_fsm
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_fsm 
+# Start time: 00:47:57 on Sep 04,2024
+# Loading sv_std.std
+# Loading work.tb_fsm
+# Loading work.fsm
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time: 0 | state: 00 | M: 0 | t0: 0 | rst_manual: 0 | error: 0 | en_cont: 0 | rst_timer: 0
+# Time: 15 | state: 10 | M: 0 | t0: 0 | rst_manual: 0 | error: 0 | en_cont: 0 | rst_timer: 0
+# Time: 20 | state: 10 | M: 1 | t0: 0 | rst_manual: 0 | error: 0 | en_cont: 0 | rst_timer: 0
+# Time: 25 | state: 00 | M: 1 | t0: 0 | rst_manual: 0 | error: 0 | en_cont: 0 | rst_timer: 0
+# Time: 35 | state: 01 | M: 1 | t0: 0 | rst_manual: 0 | error: 0 | en_cont: 1 | rst_timer: 1
+# Time: 45 | state: 00 | M: 1 | t0: 0 | rst_manual: 0 | error: 0 | en_cont: 0 | rst_timer: 0
+# Time: 55 | state: 01 | M: 1 | t0: 0 | rst_manual: 0 | error: 0 | en_cont: 1 | rst_timer: 1
+# Time: 65 | state: 00 | M: 1 | t0: 0 | rst_manual: 0 | error: 0 | en_cont: 0 | rst_timer: 0
+# Error: Esperaba el estado 2'b01, pero fue 00
+# Time: 70 | state: 00 | M: 0 | t0: 1 | rst_manual: 0 | error: 0 | en_cont: 0 | rst_timer: 0
+# Time: 75 | state: 10 | M: 0 | t0: 1 | rst_manual: 0 | error: 0 | en_cont: 0 | rst_timer: 0
+# Time: 85 | state: 11 | M: 0 | t0: 1 | rst_manual: 0 | error: 1 | en_cont: 0 | rst_timer: 0
+# Time: 120 | state: 11 | M: 0 | t0: 1 | rst_manual: 1 | error: 1 | en_cont: 0 | rst_timer: 0
+# Time: 125 | state: 00 | M: 0 | t0: 1 | rst_manual: 1 | error: 0 | en_cont: 0 | rst_timer: 0
+# Time: 135 | state: 10 | M: 0 | t0: 1 | rst_manual: 1 | error: 0 | en_cont: 0 | rst_timer: 0
+# Time: 145 | state: 11 | M: 0 | t0: 1 | rst_manual: 1 | error: 1 | en_cont: 0 | rst_timer: 0
+# Time: 155 | state: 00 | M: 0 | t0: 1 | rst_manual: 1 | error: 0 | en_cont: 0 | rst_timer: 0
+# Time: 165 | state: 10 | M: 0 | t0: 1 | rst_manual: 1 | error: 0 | en_cont: 0 | rst_timer: 0
+# Error: Esperaba el estado 2'b00, pero fue 10
+# Time: 170 | state: 10 | M: 0 | t0: 1 | rst_manual: 0 | error: 0 | en_cont: 0 | rst_timer: 0
+# Time: 175 | state: 11 | M: 0 | t0: 1 | rst_manual: 0 | error: 1 | en_cont: 0 | rst_timer: 0
+# ** Note: $finish    : C:/Taller_Diseno_Digital/Tarea_2/tb_fsm.sv(55)
+#    Time: 220 ps  Iteration: 0  Instance: /tb_fsm
+# End time: 00:48:11 on Sep 04,2024, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 0
