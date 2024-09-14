@@ -10,34 +10,89 @@
 # Copying C:/IntelFPGA2/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vlog -sv -work work +incdir+C:/Taller_Diseno_Digital/Tarea_2 {C:/Taller_Diseno_Digital/Tarea_2/register.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:44:03 on Sep 13,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Taller_Diseno_Digital/Tarea_2" C:/Taller_Diseno_Digital/Tarea_2/register.sv 
+# -- Compiling module register
+# 
+# Top level modules:
+# 	register
+# End time: 18:44:03 on Sep 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Taller_Diseno_Digital/Tarea_2 {C:/Taller_Diseno_Digital/Tarea_2/mux_2_to_1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:44:03 on Sep 13,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Taller_Diseno_Digital/Tarea_2" C:/Taller_Diseno_Digital/Tarea_2/mux_2_to_1.sv 
+# -- Compiling module mux_2_to_1
+# 
+# Top level modules:
+# 	mux_2_to_1
+# End time: 18:44:03 on Sep 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Taller_Diseno_Digital/Tarea_2 {C:/Taller_Diseno_Digital/Tarea_2/comparator.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:44:03 on Sep 13,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Taller_Diseno_Digital/Tarea_2" C:/Taller_Diseno_Digital/Tarea_2/comparator.sv 
+# -- Compiling module comparator
+# 
+# Top level modules:
+# 	comparator
+# End time: 18:44:03 on Sep 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Taller_Diseno_Digital/Tarea_2 {C:/Taller_Diseno_Digital/Tarea_2/counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:44:03 on Sep 13,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Taller_Diseno_Digital/Tarea_2" C:/Taller_Diseno_Digital/Tarea_2/counter.sv 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 18:44:03 on Sep 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Taller_Diseno_Digital/Tarea_2 {C:/Taller_Diseno_Digital/Tarea_2/fsm.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:47:57 on Sep 04,2024
+# Start time: 18:44:03 on Sep 13,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Taller_Diseno_Digital/Tarea_2" C:/Taller_Diseno_Digital/Tarea_2/fsm.sv 
 # -- Compiling module fsm
 # 
 # Top level modules:
 # 	fsm
-# End time: 00:47:57 on Sep 04,2024, Elapsed time: 0:00:00
+# End time: 18:44:03 on Sep 13,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+C:/Taller_Diseno_Digital/Tarea_2 {C:/Taller_Diseno_Digital/Tarea_2/tb_fsm.sv}
+# vlog -sv -work work +incdir+C:/Taller_Diseno_Digital/Tarea_2 {C:/Taller_Diseno_Digital/Tarea_2/mantenimiento.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:47:57 on Sep 04,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Taller_Diseno_Digital/Tarea_2" C:/Taller_Diseno_Digital/Tarea_2/tb_fsm.sv 
-# -- Compiling module tb_fsm
+# Start time: 18:44:03 on Sep 13,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Taller_Diseno_Digital/Tarea_2" C:/Taller_Diseno_Digital/Tarea_2/mantenimiento.sv 
+# -- Compiling module mantenimiento
 # 
 # Top level modules:
-# 	tb_fsm
-# End time: 00:47:57 on Sep 04,2024, Elapsed time: 0:00:00
+# 	mantenimiento
+# End time: 18:44:03 on Sep 13,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_fsm
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_fsm 
-# Start time: 00:47:57 on Sep 04,2024
+# vlog -sv -work work +incdir+C:/Taller_Diseno_Digital/Tarea_2 {C:/Taller_Diseno_Digital/Tarea_2/mantenimmiento_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:44:04 on Sep 13,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Taller_Diseno_Digital/Tarea_2" C:/Taller_Diseno_Digital/Tarea_2/mantenimmiento_tb.sv 
+# -- Compiling module mantenimmiento_tb
+# 
+# Top level modules:
+# 	mantenimmiento_tb
+# End time: 18:44:04 on Sep 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  mantenimmiento_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" mantenimmiento_tb 
+# Start time: 18:44:04 on Sep 13,2024
 # Loading sv_std.std
-# Loading work.tb_fsm
+# Loading work.mantenimmiento_tb
+# Loading work.mantenimiento
 # Loading work.fsm
+# Loading work.counter
+# Loading work.mux_2_to_1
+# Loading work.comparator
+# Loading work.register
 # 
 # add wave *
 # view structure
@@ -45,28 +100,9 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Time: 0 | state: 00 | M: 0 | t0: 0 | rst_manual: 0 | error: 0 | en_cont: 0 | rst_timer: 0
-# Time: 15 | state: 10 | M: 0 | t0: 0 | rst_manual: 0 | error: 0 | en_cont: 0 | rst_timer: 0
-# Time: 20 | state: 10 | M: 1 | t0: 0 | rst_manual: 0 | error: 0 | en_cont: 0 | rst_timer: 0
-# Time: 25 | state: 00 | M: 1 | t0: 0 | rst_manual: 0 | error: 0 | en_cont: 0 | rst_timer: 0
-# Time: 35 | state: 01 | M: 1 | t0: 0 | rst_manual: 0 | error: 0 | en_cont: 1 | rst_timer: 1
-# Time: 45 | state: 00 | M: 1 | t0: 0 | rst_manual: 0 | error: 0 | en_cont: 0 | rst_timer: 0
-# Time: 55 | state: 01 | M: 1 | t0: 0 | rst_manual: 0 | error: 0 | en_cont: 1 | rst_timer: 1
-# Time: 65 | state: 00 | M: 1 | t0: 0 | rst_manual: 0 | error: 0 | en_cont: 0 | rst_timer: 0
-# Error: Esperaba el estado 2'b01, pero fue 00
-# Time: 70 | state: 00 | M: 0 | t0: 1 | rst_manual: 0 | error: 0 | en_cont: 0 | rst_timer: 0
-# Time: 75 | state: 10 | M: 0 | t0: 1 | rst_manual: 0 | error: 0 | en_cont: 0 | rst_timer: 0
-# Time: 85 | state: 11 | M: 0 | t0: 1 | rst_manual: 0 | error: 1 | en_cont: 0 | rst_timer: 0
-# Time: 120 | state: 11 | M: 0 | t0: 1 | rst_manual: 1 | error: 1 | en_cont: 0 | rst_timer: 0
-# Time: 125 | state: 00 | M: 0 | t0: 1 | rst_manual: 1 | error: 0 | en_cont: 0 | rst_timer: 0
-# Time: 135 | state: 10 | M: 0 | t0: 1 | rst_manual: 1 | error: 0 | en_cont: 0 | rst_timer: 0
-# Time: 145 | state: 11 | M: 0 | t0: 1 | rst_manual: 1 | error: 1 | en_cont: 0 | rst_timer: 0
-# Time: 155 | state: 00 | M: 0 | t0: 1 | rst_manual: 1 | error: 0 | en_cont: 0 | rst_timer: 0
-# Time: 165 | state: 10 | M: 0 | t0: 1 | rst_manual: 1 | error: 0 | en_cont: 0 | rst_timer: 0
-# Error: Esperaba el estado 2'b00, pero fue 10
-# Time: 170 | state: 10 | M: 0 | t0: 1 | rst_manual: 0 | error: 0 | en_cont: 0 | rst_timer: 0
-# Time: 175 | state: 11 | M: 0 | t0: 1 | rst_manual: 0 | error: 1 | en_cont: 0 | rst_timer: 0
-# ** Note: $finish    : C:/Taller_Diseno_Digital/Tarea_2/tb_fsm.sv(55)
-#    Time: 220 ps  Iteration: 0  Instance: /tb_fsm
-# End time: 00:48:11 on Sep 04,2024, Elapsed time: 0:00:14
+# ** Note: $finish    : C:/Taller_Diseno_Digital/Tarea_2/mantenimmiento_tb.sv(67)
+#    Time: 9550 ps  Iteration: 0  Instance: /mantenimmiento_tb
+# 1
+# Break in Module mantenimmiento_tb at C:/Taller_Diseno_Digital/Tarea_2/mantenimmiento_tb.sv line 67
+# End time: 18:44:25 on Sep 13,2024, Elapsed time: 0:00:21
 # Errors: 0, Warnings: 0

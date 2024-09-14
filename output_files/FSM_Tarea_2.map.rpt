@@ -1,5 +1,5 @@
 Analysis & Elaboration report for FSM_Tarea_2
-Wed Sep 04 00:47:44 2024
+Fri Sep 13 18:43:55 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -9,9 +9,16 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
-  6. Analysis & Elaboration Suppressed Messages
+  4. Parameter Settings for User Entity Instance: counter:mant
+  5. Parameter Settings for User Entity Instance: counter:ciclos
+  6. Parameter Settings for User Entity Instance: mux_2_to_1:mux21
+  7. Parameter Settings for User Entity Instance: comparator:cmp
+  8. Parameter Settings for User Entity Instance: register:state_reg
+  9. Analysis & Elaboration Settings
+ 10. Port Connectivity Checks: "comparator:cmp"
+ 11. Port Connectivity Checks: "mux_2_to_1:mux21"
+ 12. Port Connectivity Checks: "counter:ciclos"
+ 13. Analysis & Elaboration Messages
 
 
 
@@ -38,10 +45,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Wed Sep 04 00:47:44 2024       ;
+; Analysis & Elaboration Status ; Successful - Fri Sep 13 18:43:55 2024       ;
 ; Quartus Prime Version         ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                 ; FSM_Tarea_2                                 ;
-; Top-level Entity Name         ; fsm                                         ;
+; Top-level Entity Name         ; mantenimiento                               ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -69,13 +76,63 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counter:mant ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; N              ; 8     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counter:ciclos ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; N              ; 8     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_2_to_1:mux21 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; N              ; 8     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparator:cmp ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; N              ; 8     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register:state_reg ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; N              ; 8     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSXFC6D6F31C6     ;                    ;
-; Top-level entity name                                                           ; fsm                ; FSM_Tarea_2        ;
+; Top-level entity name                                                           ; mantenimiento      ; FSM_Tarea_2        ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -156,13 +213,43 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
++--------------------------------------------+
+; Port Connectivity Checks: "comparator:cmp" ;
++---------+-------+----------+---------------+
+; Port    ; Type  ; Severity ; Details       ;
++---------+-------+----------+---------------+
+; B[7..6] ; Input ; Info     ; Stuck at VCC  ;
+; B[5..4] ; Input ; Info     ; Stuck at GND  ;
+; B[2..0] ; Input ; Info     ; Stuck at GND  ;
+; B[3]    ; Input ; Info     ; Stuck at VCC  ;
++---------+-------+----------+---------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "mux_2_to_1:mux21" ;
++------+-------+----------+--------------------+
+; Port ; Type  ; Severity ; Details            ;
++------+-------+----------+--------------------+
+; B    ; Input ; Info     ; Stuck at VCC       ;
++------+-------+----------+--------------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "counter:ciclos" ;
++------+-------+----------+------------------+
+; Port ; Type  ; Severity ; Details          ;
++------+-------+----------+------------------+
+; en   ; Input ; Info     ; Stuck at VCC     ;
++------+-------+----------+------------------+
+
+
 +---------------------------------+
 ; Analysis & Elaboration Messages ;
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed Sep 04 00:47:33 2024
+    Info: Processing started: Fri Sep 13 18:43:47 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FSM_Tarea_2 -c FSM_Tarea_2 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -190,18 +277,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file tb_coun
     Info (12023): Found entity 1: tb_counter File: C:/Taller_Diseno_Digital/Tarea_2/tb_counter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_fsm.sv
     Info (12023): Found entity 1: tb_fsm File: C:/Taller_Diseno_Digital/Tarea_2/tb_fsm.sv Line: 1
-Info (12127): Elaborating entity "fsm" for the top level hierarchy
-Info (144001): Generated suppressed messages file C:/Taller_Diseno_Digital/Tarea_2/output_files/FSM_Tarea_2.map.smsg
+Info (12127): Elaborating entity "mantenimiento" for the top level hierarchy
+Info (12128): Elaborating entity "fsm" for hierarchy "fsm:control" File: C:/Taller_Diseno_Digital/Tarea_2/mantenimiento.sv Line: 6
+Info (12128): Elaborating entity "counter" for hierarchy "counter:mant" File: C:/Taller_Diseno_Digital/Tarea_2/mantenimiento.sv Line: 8
+Info (12128): Elaborating entity "mux_2_to_1" for hierarchy "mux_2_to_1:mux21" File: C:/Taller_Diseno_Digital/Tarea_2/mantenimiento.sv Line: 12
+Info (12128): Elaborating entity "comparator" for hierarchy "comparator:cmp" File: C:/Taller_Diseno_Digital/Tarea_2/mantenimiento.sv Line: 14
+Info (12128): Elaborating entity "register" for hierarchy "register:state_reg" File: C:/Taller_Diseno_Digital/Tarea_2/mantenimiento.sv Line: 16
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4769 megabytes
-    Info: Processing ended: Wed Sep 04 00:47:44 2024
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:09
-
-
-+--------------------------------------------+
-; Analysis & Elaboration Suppressed Messages ;
-+--------------------------------------------+
-The suppressed messages can be found in C:/Taller_Diseno_Digital/Tarea_2/output_files/FSM_Tarea_2.map.smsg.
+    Info: Processing ended: Fri Sep 13 18:43:55 2024
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:07
 
 
